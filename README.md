@@ -16,8 +16,6 @@ OpenClaw 技能集合，包含图片理解与分析技能。
 **使用方法：**
 ```bash
 cd siliconflow-qwen-vision
-export http_proxy=http://192.168.31.32:15732
-export https_proxy=http://192.168.31.32:15732
 python scripts/analyze_image.py -i image.jpg -p "描述图片"
 ```
 
@@ -34,35 +32,11 @@ python scripts/analyze_image.py -i image.jpg -p "描述图片"
 ```bash
 cd minimax-mcp-vision
 source .venv/bin/activate
-export http_proxy=http://192.168.31.32:15732
-export https_proxy=http://192.168.31.32:15732
 python scripts/analyze_image.py -i image.jpg -p "描述图片"
 ```
 
 **环境变量：**
 - `MINIMAX_API_KEY`: MiniMax Coding Plan API Key
-
-## 配置
-
-技能已配置在 OpenClaw 的 `~/.openclaw/openclaw.json` 中：
-
-```json
-{
-  "skills": {
-    "entries": {
-      "siliconflow-qwen-vision": {
-        "enabled": true
-      },
-      "minimax-mcp-vision": {
-        "enabled": true,
-        "env": {
-          "MINIMAX_API_KEY": "your-api-key"
-        }
-      }
-    }
-  }
-}
-```
 
 ## License
 

@@ -15,11 +15,9 @@ description: 使用 MiniMax Coding Plan MCP 进行图片理解与分析。当用
 ## 使用方法
 
 ```bash
-cd ~/.npm-global/lib/node_modules/openclaw/skills/minimax-mcp-vision
+cd minimax-mcp-vision
 source .venv/bin/activate
-export http_proxy=http://192.168.31.32:15732
-export https_proxy=http://192.168.31.32:15732
-python scripts/analyze_image.py -i /path/to/image.jpg -p "请描述这张图片"
+python scripts/analyze_image.py -i image.jpg -p "描述图片"
 ```
 
 ## 参数说明
